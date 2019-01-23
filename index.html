@@ -1,0 +1,135 @@
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+<style>
+	body
+	{
+	 background-image: linear-gradient(#FEFCFF,#4EE2EC);
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	}
+	#container
+	{
+		width: 100%;
+		display: flex;
+	}
+	#app
+	{
+		width: 70%;
+	}
+	#details
+	{
+		width: 25%;
+	}
+	#movie-name
+	{
+		padding: 5px;
+	}
+	#movie-name:focus
+	{
+		 background:#FDEEF4;
+		font-weight:bold;
+	}
+	#find
+	{
+		 margin-left: 5px;
+		padding: 5px;
+		text-align: center; 
+		transition: all 0.5s; 
+		cursor: pointer;
+	
+	}
+	#find:hover
+	{
+	
+		background:#2B65EC;
+		padding: 5px;
+		color:#fff;
+		font-weight: bold;
+		border: 2px solid #2B65EC;
+		border-radius: 3px 7px;
+		opacity: 0.7;
+	  box-shadow: 1px 1px #53a7ea,
+	  2px 2px #53a7ea, 
+		3px 3px #53a7ea;
+		-webkit-transform:translateX(-5px);
+		transform: translateX(-3px);
+		
+	}
+	#wrapper
+	{
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:24px;;
+		border: 3px solid #C2DFFF;
+		border-radius: 4px 5px;
+		text-align: center;
+	}
+	#top
+	{
+		background:#E5E4E2;
+		opacity: 0.9;
+	}
+	.title
+	{
+	 background-image: linear-gradient(to left,#FEFCFF,#2B65EC);
+	 text-align:center;
+   transition: all 0.5s;
+
+	}
+	.title:hover
+	{
+		 background-image: linear-gradient(to right,#FEFCFF,#4EE2EC); 
+		 text-align:center;
+	  -webkit-transform: translateX(-5px); 
+	 transform: translateX(-5px);
+	 -webkit-transform: scaleY(1.5);
+
+
+	}
+	.name
+	{
+		 background-image: linear-gradient(to right,#FEFCFF,#4EE2EC);
+		text-align: right;
+		 transition: all 0.5s;
+	}
+	.name:hover
+	{
+		 transform: scaleY(1.5);
+	}
+	img
+	{
+		margin-top: 24px;
+		max-width: 24%;
+		border: 5px ridge pink;
+		border-radius:3px 7px;
+	}
+	img:hover
+	{
+	  max-width: 27%;
+	  border: 5px ridge blue; 
+		border-radius:3px 7px;
+	}
+</style>
+
+<body>
+	<h1 class="title"> AJAX  Movie API</h1>
+	<p class="name">by Tatiana Trofimova</p>
+	<div id="top">
+	<div id="wrapper">
+	<input id="movie-name" placeholder="Search by Movie Name"/>
+	<button id="find">Search </button>
+	<div id="container">
+	<div id="app"></div>
+	<div id="details"></div>
+	</div>
+	</div>
+
+	<script src="src/index.js"></script>
+</body>
+
+</html>
